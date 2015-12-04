@@ -1,0 +1,5 @@
+---
+language: objective-c
+osx-image: xcode7.1
+
+script: echo hello, testing a thing.
