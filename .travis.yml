@@ -9,3 +9,4 @@ script:
   - pod --version
   - xcpretty --version
   - xctool -version
+  - fastlane --version
