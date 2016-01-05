@@ -10,3 +10,4 @@ script:
   - xcpretty --version
   - xctool -version
   - fastlane --version
+  - carthage version
