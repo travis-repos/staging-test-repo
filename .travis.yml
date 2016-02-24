@@ -6,10 +6,5 @@ matrix:
 
 install: true
 script:
-  - security find-identity ~/Library/Keychains/login.keychain || true
-  - security find-identity -v -p codesigning || true
-  - chmod +x ./nuke-cert.sh
-  - ./nuke-cert.sh
-  - security find-identity ~/Library/Keychains/login.keychain || true
-  - security find-identity -v -p codesigning || true
-  - sleep 3
+  - pod setup
+  - pod setup
