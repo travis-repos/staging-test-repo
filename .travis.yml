@@ -1,26 +1,15 @@
----
 language: objective-c
 matrix:
-  include: 
-#    - osx_image: xcode6.4
-    - osx_image: xcode7
-    - osx_image: xcode7.1
+  include:
     - osx_image: xcode7.2
-    - osx_image: xcode7.3
+    - osx_image: xcode7.1
 
+install: true
 script:
-  - echo I Objective-C what you did there.
-  - uname -a
-  - sw_vers -productVersion
-  - motion --version
-  - pod --version
-  - xcpretty --version
-  - xctool -version
-  - fastlane --version
-  - carthage version
-  - curl -o doctor.rb https://raw.githubusercontent.com/mislav/ssl-tools/master/doctor.rb
-  - gem install faraday
-  - ruby test_ssl.rb
-  - ruby doctor.rb upload.hockeyapp.net:443
-#  - rvm reinstall 2.0.0-p643 --disable-binary
-#  - ruby test_ssl.rb
+  - security find-identity ~/Library/Keychains/login.keychain || true
+  - security find-identity -v -p codesigning || true
+  - chmod +x ./nuke-cert.sh
+  - ./nuke-cert.sh
+  - security find-identity ~/Library/Keychains/login.keychain || true
+  - security find-identity -v -p codesigning || true
+  - sleep 3
