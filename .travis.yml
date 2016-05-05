@@ -3,6 +3,14 @@ language: objective-c
 osx_image: xcode7.3
 
 script:
+  - uname -a
+  - sw_vers -productVersion
+  - motion --version
+  - pod --version
+  - xcpretty --version
+  - xctool -version
+  - fastlane --version
+  - carthage version
   - rvm list
-  - rvm use 2.2.4
-  - ruby -v
+  - nvm list
+  - for pkg in $(brew list); do brew info $pkg| grep '*'|cut -d'/' -f 5,6|cut -d' ' -f 1; done
