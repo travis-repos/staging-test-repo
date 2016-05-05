@@ -23,5 +23,6 @@ script:
   - gem install faraday
   - ruby test_ssl.rb
   - ruby doctor.rb upload.hockeyapp.net:443
+  - true
 #  - rvm reinstall 2.0.0-p643 --disable-binary
 #  - ruby test_ssl.rb
