@@ -1,0 +1,16 @@
+env:
+  - FOO=a
+  - FOO=b
+  - FOO=c
+  - FOO=d
+  - FOO=e
+  - FOO=f
+  - FOO=g
+  - FOO=h
+  - FOO=i
+  - FOO=j
+  - FOO=k
+  - FOO=l
+  - FOO=m
+  - FOO=n
+  - FOO=o
