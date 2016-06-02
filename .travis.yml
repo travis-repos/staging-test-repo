@@ -1,3 +1,5 @@
+sudo: false
+dist: trusty
 env:
   - FOO=a
   - FOO=b
