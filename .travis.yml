@@ -1,6 +1,4 @@
 sudo: required
-dist: trusty
-group: dev
 env:
   - FOO=a
   - FOO=b
