@@ -14,7 +14,8 @@ script:
   - uname -a
   - sw_vers -productVersion
   - motion --version
-  - nvm
+  - nvm list
+  - rvm list
   - pod --version
   - xcpretty --version
   - xctool -version
