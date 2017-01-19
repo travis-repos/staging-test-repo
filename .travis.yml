@@ -1,2 +1,5 @@
 script:
   - sh --version
+  - sh -v
+  - sh -h
+  - sh --help
