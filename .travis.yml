@@ -1,2 +1,2 @@
 script:
-  - man sh
+  - /bin/env bash --help
