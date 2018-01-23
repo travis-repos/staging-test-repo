@@ -1,17 +1,8 @@
 sudo: required
 env:
   - FOO=a
-  - FOO=b
-  - FOO=c
-  - FOO=d
-  - FOO=e
-  - FOO=f
-  - FOO=g
-  - FOO=h
-  - FOO=i
-  - FOO=j
-  - FOO=k
-  - FOO=l
-  - FOO=m
-  - FOO=n
-  - FOO=o
+
+script:
+  - wget --retry-connrefused --waitretry=1 -O /tmp/mdk.pkg http://download.mono-project.com/archive/5.0.1/macos-10-universal/MonoFramework-MDK-5.0.1.macos10.xamarin.universal.pkg
+  - host google.com
+  - traceroute travis-ci.org
