@@ -1,2 +1,2 @@
 sudo: false
-script: false
+script: true
