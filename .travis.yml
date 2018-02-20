@@ -1,2 +1,2 @@
-sudo: false
+sudo: required
 script: getconf ARG_MAX
