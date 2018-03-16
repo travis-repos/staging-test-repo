@@ -1,17 +1,7 @@
-sudo: required
-env:
-  - FOO=a
-  - FOO=b
-  - FOO=c
-  - FOO=d
-  - FOO=e
-  - FOO=f
-  - FOO=g
-  - FOO=h
-  - FOO=i
-  - FOO=j
-  - FOO=k
-  - FOO=l
-  - FOO=m
-  - FOO=n
-  - FOO=o
+jobs:
+  include:
+    - stage: test
+      script: echo test 1
+    - script: echo test 2
+    - stage: deploy
+      script: echo deploy
