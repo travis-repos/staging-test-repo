@@ -1,17 +1,3 @@
-sudo: required
-env:
-  - FOO=a
-  - FOO=b
-  - FOO=c
-  - FOO=d
-  - FOO=e
-  - FOO=f
-  - FOO=g
-  - FOO=h
-  - FOO=i
-  - FOO=j
-  - FOO=k
-  - FOO=l
-  - FOO=m
-  - FOO=n
-  - FOO=o
+language: node_js
+node_js:
+  - "7"
